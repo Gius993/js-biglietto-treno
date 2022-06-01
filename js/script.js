@@ -23,11 +23,6 @@ var ticketPrice = ticketPrice - discount40;
 } else {
 var ticketPrice = ticketPrice;
 }
-//fix decimali
-console.log(ticketPrice.toFixed(2));
-console.log(ticketPrice - discount20.toFixed(2));
-console.log(ticketPrice - discount40.toFixed(2));
-
 
 //Stampa
-document.getElementById("ticket").innerHTML = "Il prezzo del tuo biglietto è: " + ticketPrice + " euro";
+document.getElementById("ticket").innerHTML = "Il prezzo del tuo biglietto è: " + ticketPrice.toFixed(2) + " euro";
